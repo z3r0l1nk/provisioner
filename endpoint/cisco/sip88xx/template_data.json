@@ -8,21 +8,9 @@
             "name":"General Settings",
             "item":[
               {
-                "variable":"$services_url",
-                "default_value":"",
-                "description":"Services URL",
-                "type":"input"
-              },
-              {
                 "variable":"$directory_url",
                 "default_value":"",
                 "description":"Directory URL",
-                "type":"input"
-              },
-              {
-                "variable":"$logo_url",
-                "default_value":"",
-                "description":"Logo URL",
                 "type":"input"
               },
               {
@@ -42,32 +30,52 @@
                     "value":"none"
                   },
                   {
-                    "text":"G.711 A-law (Everyone except US)",
+                    "text":"G.711 A-law",
                     "value":"g711alaw"
                   },
                   {
-                    "text":"G.711 u-law (US)",
+                    "text":"G.711 u-law",
                     "value":"g711ulaw"
                   },
                   {
-                    "text":"G.729",
-                    "value":"g729a"
+                    "text":"G.722 Wideband",
+                    "value":"g722"
                   }
                 ]
               },
               {
                 "variable":"$date_template",
-                "default_value":"M/D/YA",
+                "default_value":"D/M/YY",
                 "description":"Date Format",
                 "type":"list",
                 "data":[
                   {
-                    "text":"American",
-                    "value":"M/D/YA"
+                    "text":"European (D/M/YY)",
+                    "value":"D/M/YY"
                   },
                   {
-                    "text":"European",
-                    "value":"D-M-Ya"
+                    "text":"American (M/D/YA)",
+                    "value":"M/D/YA"
+                  }
+                ]
+              },
+              {
+                "variable":"$transport_protocol",
+                "default_value":"2",
+                "description":"SIP Transport Protocol",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"TCP",
+                    "value":"1"
+                  },
+                  {
+                    "text":"UDP",
+                    "value":"2"
+                  },
+                  {
+                    "text":"TLS",
+                    "value":"4"
                   }
                 ]
               }

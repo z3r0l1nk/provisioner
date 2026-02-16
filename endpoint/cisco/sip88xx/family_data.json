@@ -1,40 +1,38 @@
 {
     "data": {
-        "name": "Cisco SIP 79x1G Models [7940G,7941G,7961G]",
-        "id": "4",
-        "directory": "sip79x1G",
+        "name": "Cisco SIP 8800 Series [8841,8851,8861]",
+        "id": "10",
+        "directory": "sip88xx",
         "firmware_ver": "",
         "firmware_pkg": "NULL",
         "firmware_md5sum": "",
-        "description": "",
-        "configuration_files": "SEP$mac.cnf.xml,XMLDefault.cnf.xml,RINGLIST.DAT,ringlist.xml,dialplan.xml",
+        "description": "Cisco 8800 Series SIP phones with usecallmanager firmware",
+        "configuration_files": "SEP$mac.cnf.xml,Ringlist-wb.xml,dialplan.xml",
         "changelog": "",
         "provisioning_types": [
             "tftp"
         ],
         "model_list": [
             {
-                "model": "7940G",
-                "lines": "4",
+                "model": "8841",
+                "lines": "5",
                 "id": "1",
                 "template_data": [
                     "template_data.json"
                 ]
             },
             {
-                "model": "7941G",
-                "lines": "4",
+                "model": "8851",
+                "lines": "5",
                 "id": "2",
-                "firmware": "SIP41.*.loads",
                 "template_data": [
                     "template_data.json"
                 ]
             },
             {
-                "model": "7961G",
-                "lines": "6",
+                "model": "8861",
+                "lines": "5",
                 "id": "3",
-                "firmware": "SIP41.*.loads",
                 "template_data": [
                     "template_data.json"
                 ]
